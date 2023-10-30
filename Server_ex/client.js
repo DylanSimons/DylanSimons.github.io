@@ -90,7 +90,7 @@ function negotiate() {
             headers: {
                 'Content-Type': 'application/json'
             },
-            method: 'POST'
+            method: 'GET'
         });
     }).then(function(response) {
         return response.json();
