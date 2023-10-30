@@ -81,6 +81,7 @@ function negotiate() {
         }
 
         document.getElementById('offer-sdp').textContent = offer.sdp;
+        console.log(offer.sdp);
         return fetch('/offer', {
             body: JSON.stringify({
                 sdp: offer.sdp,
